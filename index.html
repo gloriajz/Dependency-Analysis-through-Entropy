@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dependency Analysis through Entropy – GNDD</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: #20232a;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    main {
+      max-width: 960px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+    }
+    h2 {
+      color: #20232a;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.3rem;
+    }
+    ul {
+      margin-left: 1.5rem;
+    }
+    code {
+      background: #eee;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+    }
+    footer {
+      background: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dependency Analysis through Entropy</h1>
+    <p>GNDD Metric: Robust Nonlinear Dependency Detection</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>📌 Overview</h2>
+      <p>
+        This project introduces GNDD (Generalized Nonlinear Dependency Distance), an entropy-based distance metric 
+        developed to detect linear and nonlinear dependencies in high-dimensional and noisy datasets. GNDD addresses 
+        limitations of mutual information and correlation, offering robustness, interpretability, and scalability.
+      </p>
+    </section>
+
+    <section>
+      <h2>🧠 Objectives</h2>
+      <ul>
+        <li>Design a normalized, metric-compliant dependency distance using entropy</li>
+        <li>Capture nonlinear and multivariate relationships across mixed-type variables</li>
+        <li>Enhance robustness under noise and small sample sizes</li>
+        <li>Apply the GNDD metric to real financial data and synthetic simulations</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🧮 Methodology</h2>
+      <ul>
+        <li><strong>GNDD Derivation:</strong> Built from normalized mutual information and entropy, satisfying metric properties</li>
+        <li><strong>GNDD<sub>robust</sub>:</strong> Includes noise thresholding to filter spurious dependencies</li>
+        <li><strong>Dynamic GNDD:</strong> Uses sliding windows to track time-varying relationships</li>
+        <li><strong>Multivariate GNDD:</strong> Extends to multiple variables using joint entropy estimation</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📊 Empirical Results</h2>
+      <p>The following figures illustrate GNDD's real-world performance:</p>
+      <ul>
+        <li><strong>GNDD over time:</strong> Captures evolving dependencies in financial indices</li>
+        <li><strong>Noise Level 1–4:</strong> Tests GNDD's resilience to increasing noise interference</li>
+      </ul>
+      <p>Visuals:
+        <ul>
+          <li><code>GNDD over time.png</code></li>
+          <li><code>noiselevel1.png</code></li>
+          <li><code>noiselevel2.png</code></li>
+          <li><code>noiselevel3.png</code></li>
+          <li><code>noiselevel4.png</code></li>
+        </ul>
+      </p>
+    </section>
+
+    <section>
+      <h2>🧪 Simulation Analysis</h2>
+      <p>GNDD was tested under controlled simulation scenarios to evaluate sensitivity to parameters:</p>
+      <ul>
+        <li><strong>Effect of Window Size (w):</strong> Assesses sensitivity to temporal granularity</li>
+        <li><strong>Effect of Noise Threshold (ε):</strong> Shows influence of filtering strength</li>
+        <li><strong>Scenario 1–5:</strong> Various synthetic nonlinear and multivariate dependency structures</li>
+      </ul>
+      <p>Graphs included:
+        <ul>
+          <li><code>Effect of Window Size w.png</code></li>
+          <li><code>Effect of Noise Threshold epsilon.png</code></li>
+          <li><code>scenario 1a.png</code>, <code>1b.png</code>, <code>2.png</code>, <code>4.png</code>, <code>5.png</code></li>
+        </ul>
+      </p>
+    </section>
+
+    <section>
+      <h2>🚀 Further Enhancements</h2>
+      <p>GNDD extensions were proposed for temporal tracking and improved robustness:</p>
+      <ul>
+        <li><strong>Dynamic GNDD:</strong> Sliding window tracking of evolving relationships</li>
+        <li><strong>Robust GNDD:</strong> Performance under extreme noisy conditions</li>
+      </ul>
+      <p>Figures:
+        <ul>
+          <li><code>Dynamic GNDD Performance Over Time.png</code></li>
+          <li><code>Robust GNDD Under Noisy Conditions.png</code></li>
+        </ul>
+      </p>
+    </section>
+
+    <section>
+      <h2>📂 Repository Contents</h2>
+      <ul>
+        <li><code>code_py.ipynb</code> – GNDD Python implementation & analysis</li>
+        <li><code>Dependency_Analysis_through_Entropy_A.pdf</code> – Full report & theory</li>
+        <li><code>*.csv</code> – Real datasets (e.g., VIX, SPGTCLEN)</li>
+        <li><code>*.png</code> – Graphs: simulation, empirical, and enhancement</li>
+        <li><code>readme.txt</code> – Instructions and documentation</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Gloria J. Yang – RiskLab, University of Toronto. All rights reserved.
+  </footer>
+</body>
+</html>
